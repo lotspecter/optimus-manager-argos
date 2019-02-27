@@ -1,7 +1,7 @@
 # Kargos Script For Optimus-Manager
 Kde Plasma Widget for Optimus-Manager, using [Kargos API](https://github.com/lipido/kargos).
 
-I fork from url https://github.com/inzar98/optimus-manager-argos and I edit scrpit for Kargos for  Thank inzar98!
+I fork from url https://github.com/inzar98/optimus-manager-argos and I edit scrpit for Kargos Thank inzar98!
 
 #### Requirements
 - [Kargos](https://store.kde.org/p/1173112/) Kde Plasma Widget.
