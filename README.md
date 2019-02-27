@@ -1,29 +1,19 @@
-# Argos Script For Optimus-Manager
-Gnome Shell Indicator for Optimus-Manager, using Argos API
+# Kargos Script For Optimus-Manager
+Kde Plasma Widget for Optimus-Manager, using [Kargos API](https://github.com/lipido/kargos).
 
-Special Thanks to Cyberalex4 and Askannz <3!
-
-Screenshot was first release. Added icon switch for after gpu switching.
-
-![NVidia Prime Argos Indicator](https://github.com/inzar98/optimus-manager-argos/blob/master/screenshots/optimus-manager-1.png)                                       
+I fork from url https://github.com/inzar98/optimus-manager-argos and I edit scrpit for Kargos for  Thank inzar98!
 
 #### Requirements
-- [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome Shell extension.
+- [Kargos](https://store.kde.org/p/1173112/) Kde Plasma Widget.
 - [Optimus-Manager](https://github.com/Askannz/optimus-manager) Awesome Optimus Switch script!
 - Any Arch based distro.
 
-
 #### Installation
-Install [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome-Shell extension.
-
-Create directory `~/.local/share/icons` if it does not exist:
-```
-! [ -d "~/.local/share/icons" ] && mkdir --parents ~/.local/share/icons || trueg
-```
+Install [Kargos](https://store.kde.org/p/1173112/) Kde Plasma Widget.
 
 Then:
 ```
-git clone https://github.com/inzar98/optimus-manager-argos.git
+git clone https://github.com/lotspecter/optimus-manager-argos
 cd argos-indicator-nvidia-prime
 
 # copy icons
