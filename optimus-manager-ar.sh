@@ -3,7 +3,7 @@
 nvidia_switch='optimus-manager --no-confirm --switch nvidia'
 intel_switch='optimus-manager --no-confirm --switch intel'
 notify_switch='notify-send -h int:transient:2 -i dialog-information-symbolic "Switching graphics and" \ "restaring X server to finalize process!" ; '
-notify_reboot='notify-send -h int:transient:2 -i dialog-information-symbolic  "System will reboot!" ; '
+notify_reboot='notify-send -h int:transient:2 -i dialog-information-symbolic "System will reboot!" ; '
 
 activate_intel="$notify_switch sleep 2; $intel_switch"
 
@@ -15,6 +15,7 @@ reboot_cmd="$notify_reboot sleep 1; systemctl --no-wall reboot"
 nvidia_active_icon="nvidia-active-symbolic"
 nvidia_inactive_icon="primeindicatorintelsymbolic"
 reboot_icon="system-restart"
+
 
 QUERY=$(optimus-manager --print-mode)
 if [ "$QUERY" == 'Current mode : nvidia' ]; then
@@ -32,6 +33,5 @@ echo "NVIDIA PRIME Profiles| iconName=$nvidia_state_icon bash='$nvidia_settings'
 echo "---"
 echo "Switch to INTEL | iconName='primeindicatorintel' bash='$activate_intel' terminal=false"
 echo "Switch to NVIDIA  | iconName='primeindicatornvidia' bash='$activate_nvidia'  terminal=false"
-
 echo "---"
 echo "System Reboot | iconName=$reboot_icon bash='$reboot_cmd' terminal=false"
